@@ -481,6 +481,12 @@ ul.menu {
 
 
 /*==========================Responsive=============================*/
+@media all and (max-width:1172px){
+  body{
+    overflow-x: hidden;
+    width: 120%;
+  }
+}
 @media all and (max-width: 1172px) {
   .banner-text-item .form {
     display: flex;
@@ -488,6 +494,7 @@ ul.menu {
     justify-content: center;
     align-items: center;
     width: 100%;
+    overflow-x: hidden;
   }
 
   .banner-text-item .form input,
@@ -496,37 +503,43 @@ ul.menu {
     flex: 1;
     margin-bottom: 5px;
     font-size: 14px;
+    overflow-x: hidden;
   }
 
   .banner-text-item .form input {
     width: 200%;
+    overflow-x: hidden;
   }
 
   .banner-text-item .form .date {
     width: 100%;
+    overflow-x: hidden;
   }
 
   .banner-text-item .form .book {
-    width: 100%;
+    width: 10%;
     font-size: 14px;
+    overflow-x: hidden;
   }
 
   .banner-heading h1 {
     font-size: 60px;
+    overflow-x: hidden;
   }
 }
 
 @media all and (max-width: 1414px) {
   .banner-text-item .form input {
-    width: 40%;
+    width: 50%;
+    overflow:hidden;
   }
 
   .banner-text-item .form .date {
-    width: 30%;
+    width: 50%;
   }
 
   .banner-text-item .form .book {
-    width: 20%;
+    width: 40%;
     font-size: 14px;
   }
 }
