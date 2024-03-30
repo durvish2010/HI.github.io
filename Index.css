@@ -86,7 +86,7 @@ ul.menu {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /*overflow: hidden;*/
+  /overflow: hidden;/
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -105,7 +105,7 @@ ul.menu {
   bottom: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  /*background-size: 100%;*/
+  /background-size: 100%;/
 }
 
 .banner-text-item {
@@ -185,6 +185,7 @@ ul.menu {
 #services {
   display: flex;
   flex-flow: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -304,8 +305,9 @@ ul.menu {
   float: left;
   position: relative;
   width: 100%;
-  height: 320px;
+  height: 260px;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .zoom-img .img-card {
@@ -334,24 +336,20 @@ ul.menu {
   justify-content: center;
   padding: 150px;
 }
-
 .about-img {
   flex: 1;
 }
-
 .about-img img {
   width: 500px;
   height: 700px;
   box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
 }
-
 .about-text {
   flex: 1;
   /*width: 100px;*/
   display: flex;
   flex-flow: column wrap;
 }
-
 .about-text small,
 .about-text p,
 .about-text input,
@@ -359,12 +357,10 @@ ul.menu {
   flex: 1;
   font-family: Roboto;
 }
-
 .about-text small {
   color: #ffc342;
   font-size: 18px;
 }
-
 .about-text h2 {
   flex: 1;
   font-family: Barlow Condensed;
@@ -372,7 +368,6 @@ ul.menu {
   color: #191d34;
   width: 450px;
 }
-
 .about-text label {
   padding-bottom: 10px;
   color: #506172;
@@ -380,7 +375,6 @@ ul.menu {
   font-family: Roboto;
   letter-spacing: 1px;
 }
-
 .about-text p {
   width: 500px;
   line-height: 30px;
@@ -388,7 +382,6 @@ ul.menu {
   font-weight: bolder;
   padding: 50px 0;
 }
-
 .about-text a {
   background-color: #fff;
   border: 2px solid #014b85;
@@ -402,12 +395,10 @@ ul.menu {
   font-weight: bolder;
   font-size: 14px;
 }
-
 .about-text a:hover {
   background-color: #014b85;
   color: #fff;
 }
-
 /*===============Footer===================*/
 #footer {
   background-image: url("2.jpg");
@@ -684,13 +675,22 @@ ul.menu {
 }
 
 @media all and (max-width: 708px) {
+  html,body {
+    width: 600px;
+  }
   #footer {
-    width: 100%;
+    width: 600px;
     height: 670px;
     position: relative;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+  }
+  #all {
+    width: 600px
+  }
+  .card {
+    height: 470px;
   }
 }
